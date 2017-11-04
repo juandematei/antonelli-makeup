@@ -31,7 +31,7 @@ body {
     left: 0;
     width: 100vw;
     z-index: 1;
-    background: #DB5F77;
+    background: #744B59;
     opacity: 0.60;
 }
   
@@ -41,4 +41,42 @@ body {
 
 #mainNav {
     margin-bottom: 50px;
+}
+
+.btn-primary {
+    background-color: #DB5F77;
+    border-color: #DB5F77;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #DB5F77;
+    border-color: #DB5F77;
+}
+
+.btn-outline-primary {
+    border-color: #DB5F77;
+    color: #DB5F77;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
+    background-color: #DB5F77;
+    border-color: #DB5F77;
+}
+
+.jumbotron-custom {
+    background-color: #5A5664;
+}
+
+.footer-responsive-widget {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.footer-responsive-widget iframe{
+    left: 0;
+    top: 0;
+    height: 500px;
+    width: 100%;
+    position: absolute;
 }
