@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<body id="home">
 
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
@@ -26,13 +18,13 @@
         </div>
         <div class="fullscreen-video-overlay"></div>
         <div class="video-overlay-content text-center">
-            <h1 class="display-2">Bienvenida!</h1>
+            <h1 class="display-1">Bienvenida!</h1>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum animi dolor vero, consequuntur enim ut debitis? Dolorum, exercitationem officia!</p>
             <a name="cta" id="cta" class="btn btn-lg btn-primary" href="#" role="button">CTA button</a>
         </div>
     </header>
 
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark" id="mainNav">
+    <nav id="mainNav" class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="60" class="d-inline-block align-top" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,95 +33,155 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link ml-3" href="#">Home</a>
+                        <a class="nav-link ml-3" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-3" href="#">Servicios</a>
+                        <a class="nav-link ml-3" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-3" href="#">Cursos</a>
+                        <a class="nav-link ml-3" href="#cursos">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-primary ml-3" href="#" role="button">Contacto</a>
+                        <a class="btn btn-outline-primary ml-3" href="#contacto" role="button">Contacto</a>
                     </li>    
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="display-3">Servicios</h3>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center mb-4">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/324655/pexels-photo-324655.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Maquillaje</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="display-3">Servicios</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="https://images.pexels.com/photos/324655/pexels-photo-324655.jpeg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Maquillaje</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="https://images.pexels.com/photos/247295/pexels-photo-247295.jpeg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Peinados</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="https://images.pexels.com/photos/361755/pexels-photo-361755.jpeg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Cursos</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card text-center mb-4">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/247295/pexels-photo-247295.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Peinados</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center mb-4">
-                    <img class="card-img-top" src="https://images.pexels.com/photos/361755/pexels-photo-361755.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Cursos</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </div> 
+    </section>
 
     <div class="jumbotron jumbotron-fluid jumbotron-custom text-light">
         <div class="container">
-            <h1 class="display-3">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
-    </div>
-
-    <footer class="py-4">
-        <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h4><i class="fa fa-map-marker" aria-hidden="true"></i> Dónde estamos?</h4>
-                    <div class="footer-responsive-widget">
-                        <!-- Google Maps -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.8724486801216!2d-58.467574349338186!3d-34.55678476242713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6822cf09383%3A0x88c180a96ffcf04!2sMoldes+2906%2C+C1429AFB+CABA!5e0!3m2!1sen!2sar!4v1509832320590" width="640" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                <div class="col-4 text-center">
+                    <img src="img/yamila.jpg" alt="" class="jumbo-profile">
                 </div>
-                <div class="col-md-4">
-                    <h4><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</h4>
-                    <div class="footer-responsive-widget">
-                    <!-- SnapWidget -->
-                    <iframe src="https://snapwidget.com/embed/465225" width="640" height="480" scrolling="no" frameborder="0" style="border:0"></iframe>
-                    </div>
+                <div class="col-8 d-flex flex-column justify-content-center">
+                    <h3 class="display-4">Yamila Antonelli</h3>
+                    <p class="lead">Maquilladora profesional</p>
+                    <p>
+                        <i class="fa fa-envelope mr-2" aria-hidden="true"></i><a class="text-light" href="mailto:antonellimakeup@gmail.com">antonellimakeup@gmail.com</a>
+                        <i class="fa fa-phone mr-2 ml-2" aria-hidden="true"></i><a class="text-light" href="tel: +54 11 3321-7234">11 3321-7234</a>
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <h4><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</h4>
-                    <div class="footer-responsive-widget">
-                        <!-- Facebook -->
-                        <div class="fb-page" data-href="https://www.facebook.com/antonellimakeup/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/antonellimakeup/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/antonellimakeup/">Antonelli Make Up</a></blockquote></div>
+            </div>
+        </div>
+    </div> 
+
+    <section id="cursos" class="py-5">
+        <div class="container">
+            <h2 class="display-3">Cursos</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <h4 class="card-header">Destacado</h4>
+                        <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>   
+
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+             <div class="row">
+                <div class="col-5">
+                    <h2 class="display-3">Contacto</h2>
+                    <p class="lead">Completá el formulario y enviá tu consulta.</p>
+                    <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> <a class="text-dark" href="mailto:antonellimakeup@gmail.com">antonellimakeup@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone" aria-hidden="true"></i> <a class="text-dark" href="tel: +54 11 3321-7234">11 3321-7234</a>
+                    <br>
+                    <a class="social-link" href="#"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>
+                    <a class="social-link" href="#"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-7">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="name">Nombre</label> -->
+                            <input type="text" class="form-control" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="email">Email</label> -->
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="phone">Teléfono</label> -->
+                            <input type="phone" class="form-control" id="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="reason">Motivo de la consulta</label> -->
+                            <select class="form-control" name="reason" id="reason">
+                                <option value="" selected disabled>Motivo del mensaje</option>
+                                <option value="">Maquillaje</option>
+                                <option value="">Novia</option>
+                                <option value="">Automaquillaje</option>
+                                <option value="">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="message">Mensaje</label> -->
+                            <textarea class="form-control" id="message" rows="3" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="map-fluid">
+        <!-- Google Maps -->
+        <iframe src="https://snazzymaps.com/embed/26708" style="border:none;"></iframe>
+    </div>
+
+    <footer class="py-5 bg-dark">
+
     </footer>
 
+    <!-- Required scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
