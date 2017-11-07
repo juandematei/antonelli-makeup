@@ -1,5 +1,10 @@
 //Colors
-$primary-color: #DB5F77;
+$color-1: #DB5F77;
+$color-2: #744B59;
+$color-3: #5A5664;
+$color-4: #C4C2CE;
+$color-5: #D19A58;
+$color-6: #A65853;
 
 body {
     overflow-x: hidden;
@@ -9,7 +14,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #FFF;
 }
 
 .fullscreen-video-wrap {
@@ -34,27 +39,62 @@ body {
     left: 0;
     width: 100vw;
     z-index: 1;
-    background: #744B59;
-    opacity: 0.60;
+    background: rgba($color-2, 0.7);
 }
 
 .video-overlay-content {
     z-index: 2;
 }
 
+.dot-container {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 2rem auto;
+}
+
+.dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dot-1 {
+    background-color: $color-5;
+}
+
+.dot-2 {
+    background-color: $color-1;
+}
+
+.dot-3 {
+    background-color: $color-4;
+}
+
+.dot-4 {
+    background-color: $color-3;
+}
+
+.dot-5 {
+    background-color: $color-6;
+}
+
+.dot-6 {
+    background-color: $color-2;
+}
+
 .btn-primary {
-    background-color: $primary-color;
-    border-color: $primary-color;
+    background-color: $color-1;
+    border-color: $color-1;
 
     &:hover, &.hover, &:active, &.active, &:focus, &.focus {
-        background-color: darken($primary-color, 10%);
-        border-color: darken($primary-color, 10%);
+        background-color: darken($color-1, 10%);
+        border-color: darken($color-1, 10%);
     }
 }
 
 .jumbotron-custom {
-    background: linear-gradient(rgba(116, 75, 89, 0.6),rgba(219, 95, 119, 0.6)), url('img/bg-jumbotron.jpg');
-    /*background-image: url('img/bg-jumbotron.jpg');*/
+    background: linear-gradient(45deg, rgba($color-1, 0.7), rgba($color-2, 0.7)), url('img/bg-jumbotron.jpg');
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -62,7 +102,7 @@ body {
 
 .jumbo-profile {
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid #FFF;
     max-height: 200px;
 }
 
@@ -82,17 +122,17 @@ body {
 
 .social-link {
     display: inline-block;
-    background-color: #DB5F77;
+    background-color: $color-1;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: #fff;
+    color: #FFF;
     margin-top: 20px;
 }
 
 a.social-link, a:hover.social-link {
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
 }

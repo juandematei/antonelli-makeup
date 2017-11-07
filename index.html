@@ -19,6 +19,14 @@
         <div class="fullscreen-video-overlay"></div>
         <div class="video-overlay-content text-center">
             <h1 class="display-1">Bienvenida!</h1>
+            <div class="dot-container">
+                <span class="dot dot-1"></span>
+                <span class="dot dot-2"></span>
+                <span class="dot dot-3"></span>
+                <span class="dot dot-4"></span>
+                <span class="dot dot-5"></span>
+                <span class="dot dot-6"></span>
+            </div>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum animi dolor vero, consequuntur enim ut debitis? Dolorum, exercitationem officia!</p>
             <a name="cta" id="cta" class="btn btn-lg btn-primary" href="#" role="button">CTA button</a>
         </div>
@@ -121,7 +129,9 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
+
+    <div id="instafeed" style="height: 200px"></div>
 
     <section id="contacto" class="py-5 bg-light">
         <div class="container">
@@ -165,7 +175,7 @@
                             <!-- <label for="message">Mensaje</label> -->
                             <textarea class="form-control" id="message" rows="3" placeholder="Mensaje"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -185,6 +195,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'user',
+            userId: '2263540523',
+            clientId: 'df9aeb4b24b941fc9fc301f71b409e20'
+        });
+        feed.run();
+    </script>
 
 </body>
 </html>

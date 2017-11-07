@@ -6,7 +6,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #FFF;
 }
 
 .fullscreen-video-wrap {
@@ -31,12 +31,48 @@ body {
   left: 0;
   width: 100vw;
   z-index: 1;
-  background: #744B59;
-  opacity: 0.60;
+  background: rgba(116, 75, 89, 0.7);
 }
 
 .video-overlay-content {
   z-index: 2;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin: 2rem auto;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dot-1 {
+  background-color: #D19A58;
+}
+
+.dot-2 {
+  background-color: #DB5F77;
+}
+
+.dot-3 {
+  background-color: #C4C2CE;
+}
+
+.dot-4 {
+  background-color: #5A5664;
+}
+
+.dot-5 {
+  background-color: #A65853;
+}
+
+.dot-6 {
+  background-color: #744B59;
 }
 
 .btn-primary {
@@ -50,8 +86,7 @@ body {
 }
 
 .jumbotron-custom {
-  background: linear-gradient(rgba(116, 75, 89, 0.6), rgba(219, 95, 119, 0.6)), url("img/bg-jumbotron.jpg");
-  /*background-image: url('img/bg-jumbotron.jpg');*/
+  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(116, 75, 89, 0.7)), url("img/bg-jumbotron.jpg");
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
@@ -59,7 +94,7 @@ body {
 
 .jumbo-profile {
   border-radius: 50%;
-  border: 3px solid #fff;
+  border: 3px solid #FFF;
   max-height: 200px;
 }
 
@@ -86,12 +121,12 @@ body {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  color: #fff;
+  color: #FFF;
   margin-top: 20px;
 }
 
 a.social-link, a:hover.social-link {
-  color: #fff;
+  color: #FFF;
   text-decoration: none;
 }
  
