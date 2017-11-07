@@ -1,0 +1,99 @@
+body {
+  overflow-x: hidden;
+}
+
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-height: 100%;
+  min-width: 100%;
+  margin-top: -120px;
+}
+
+.fullscreen-video-overlay {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: #744B59;
+  opacity: 0.60;
+}
+
+.video-overlay-content {
+  z-index: 2;
+}
+
+.btn-primary {
+  background-color: #DB5F77;
+  border-color: #DB5F77;
+}
+
+.btn-primary:hover, .btn-primary.hover, .btn-primary:active, .btn-primary.active, .btn-primary:focus, .btn-primary.focus {
+  background-color: #d23554;
+  border-color: #d23554;
+}
+
+.jumbotron-custom {
+  background: linear-gradient(rgba(116, 75, 89, 0.6), rgba(219, 95, 119, 0.6)), url("img/bg-jumbotron.jpg");
+  /*background-image: url('img/bg-jumbotron.jpg');*/
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.jumbo-profile {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  max-height: 200px;
+}
+
+.map-fluid {
+  overflow: hidden;
+  padding-bottom: 300px;
+  position: relative;
+  height: 0;
+}
+
+.map-fluid iframe {
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+}
+
+.social-link {
+  display: inline-block;
+  background-color: #DB5F77;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+a.social-link, a:hover.social-link {
+  color: #fff;
+  text-decoration: none;
+}
+ 
+
+ /*# sourceMappingURL= styles.css.map */
