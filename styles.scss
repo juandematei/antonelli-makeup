@@ -31,6 +31,7 @@ $color-6: #A65853;
     }
 }
 
+//Main
 body {
     overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
@@ -88,6 +89,12 @@ section {
         font-weight: 100;
         text-transform: uppercase;
         font-size: 6rem;
+    }
+
+    @media (min-width: 320px) {
+        h1 {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -150,6 +157,14 @@ section {
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
+
+    button {
+        text-transform: none;
+    
+        &:hover {
+            color: $color-1;
+        }
+    } 
 }
 
 .jumbo-profile {
@@ -158,13 +173,21 @@ section {
     max-height: 200px;
 }
 
+//Courses
+
+
 //Contact
+#contact {
+    background-color: $color-4;
+}
+
 .map-fluid {
     overflow: hidden;
     padding-bottom: 300px;
     position: relative;
     height: 0;
 }
+
 .map-fluid iframe{
     left: 0;
     top: 0;

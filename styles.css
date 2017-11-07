@@ -78,6 +78,12 @@ section h2 {
   font-size: 6rem;
 }
 
+@media (min-width: 320px) {
+  .video-overlay-content h1 {
+    font-size: 3rem;
+  }
+}
+
 .dot-container {
   display: flex;
   justify-content: center;
@@ -135,10 +141,22 @@ section h2 {
   margin: 0;
 }
 
+.jumbotron-custom button {
+  text-transform: none;
+}
+
+.jumbotron-custom button:hover {
+  color: #DB5F77;
+}
+
 .jumbo-profile {
   border-radius: 50%;
   border: 3px solid #FFF;
   max-height: 200px;
+}
+
+#contact {
+  background-color: #C4C2CE;
 }
 
 .map-fluid {

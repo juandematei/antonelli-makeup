@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Antonelli makeup</title>
-    <!-- <script src="https://use.fontawesome.com/71bc55938b.js"></script> -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script src="https://use.fontawesome.com/71bc55938b.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Condensed:300,400,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="home">
+<body id="home" class="text-dark">
 
     <header class="v-header">
         <div class="fullscreen-video-wrap">
@@ -31,9 +30,9 @@
             </div>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum animi dolor vero, consequuntur enim ut debitis? Dolorum, exercitationem officia!</p>
             <a class="btn btn-lg btn-outline-light mr-2" href="#mainNav" role="button">Ver más</a>
-            <a class="btn btn-lg btn-primary ml-2" href="#contacto" role="button">Contacto</a>
+            <a class="btn btn-lg btn-primary ml-2" href="#contact" role="button">Contacto</a>
             <div class="chevrons">
-                <a href="#mainNav"><i data-feather="chevrons-down"></i></a>
+                <a href="#mainNav"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
             </div>
         </div>
     </header>
@@ -50,24 +49,24 @@
                         <a class="nav-link ml-3" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-3" href="#servicios">Servicios</a>
+                        <a class="nav-link ml-3" href="#services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-3" href="#cursos">Cursos</a>
+                        <a class="nav-link ml-3" href="#courses">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-primary ml-3" href="#contacto" role="button">Contacto</a>
+                        <a class="btn btn-outline-primary ml-3" href="#contact" role="button">Contacto</a>
                     </li>    
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="servicios" class="py-5">
+    <section id="services" class="py-5">
         <div class="container">
-            <h2>Servicios</h2>
+            <h2 class="text-center text-md-left">Servicios</h2>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="card text-center mb-4">
                         <img class="card-img-top" src="https://images.pexels.com/photos/324655/pexels-photo-324655.jpeg" alt="">
                         <div class="card-body">
@@ -77,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="card text-center mb-4">
                         <img class="card-img-top" src="https://images.pexels.com/photos/247295/pexels-photo-247295.jpeg" alt="">
                         <div class="card-body">
@@ -87,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="card text-center mb-4">
                         <img class="card-img-top" src="https://images.pexels.com/photos/361755/pexels-photo-361755.jpeg" alt="">
                         <div class="card-body">
@@ -104,24 +103,24 @@
     <div class="jumbotron jumbotron-fluid jumbotron-custom text-light">
         <div class="container">
             <div class="row">
-                <div class="col-4 text-center">
+                <div class="col-md-4 col-sm-12 text-center">
                     <img src="img/yamila.jpg" alt="" class="jumbo-profile">
                 </div>
-                <div class="col-8 d-flex flex-column justify-content-center">
+                <div class="col-md-8 col-sm-12 text-center text-md-left">
                     <h3>Yamila Antonelli</h3>
                     <p>Maquilladora profesional</p>
-                    <p>
-                        <i data-feather="mail"></i><a class="text-light" href="mailto:antonellimakeup@gmail.com">antonellimakeup@gmail.com</a>
-                        <i data-feather="phone"></i><a class="text-light" href="tel: +54 11 3321-7234">11 3321-7234</a>
-                    </p>
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-outline-light" type="button" href="mailto:antonellimakeup@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> antonellimakeup@gmail.com</button>
+                        <button class="btn btn-outline-light" type="button" href="tel: +54 11 3321-7234"><i class="fa fa-phone" aria-hidden="true"></i> 11 3321-7234</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div> 
 
-    <section id="cursos" class="py-5">
+    <section id="courses" class="py-5">
         <div class="container">
-            <h2>Cursos</h2>
+            <h2 class="text-center text-md-left">Cursos</h2>
             <div class="row">
                 <div class="col-12">
                     <div class="card mb-4">
@@ -137,21 +136,23 @@
         </div>
     </section>
 
-    <section id="contacto" class="py-5 bg-light">
+    <section id="contact" class="py-5">
         <div class="container">
              <div class="row">
-                <div class="col-5">
-                    <h2>Contacto</h2>
-                    <p class="lead">Completá el formulario y enviá tu consulta.</p>
-                    <br>
-                    <i data-feather="mail"></i> <a class="text-dark" href="mailto:antonellimakeup@gmail.com">antonellimakeup@gmail.com</a>
-                    <br>
-                    <i data-feather="phone"></i> <a class="text-dark" href="tel: +54 11 3321-7234">11 3321-7234</a>
-                    <br>
-                    <a class="social-link" href="#"><i data-feather="facebook"></i></a>
-                    <a class="social-link" href="#"><i data-feather="instagram"></i></a>
+                <div class="col-md-5 col-sm-12">
+                    <h2 class="text-center text-md-left">Contacto</h2>
+                    <p class="lead text-center text-md-left">Completá el formulario y enviá tu consulta.</p>
                 </div>
-                <div class="col-7">
+                <div class="col-md-5 d-md-block d-none">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> <a class="text-dark" href="mailto:antonellimakeup@gmail.com">antonellimakeup@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone" aria-hidden="true"></i><a class="text-dark" href="tel: +54 11 3321-7234">11 3321-7234</a>
+                </div>
+                <div class="col-md-5 d-md-block d-none">
+                    <a class="social-link" href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></i></a>
+                    <a class="social-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                </div>
+                <div class="col-md-7 col-sm-12">
                     <form>
                         <div class="form-group">
                             <!-- <label for="name">Nombre</label> -->
@@ -191,26 +192,14 @@
         <iframe src="https://snazzymaps.com/embed/26708" style="border:none;"></iframe>
     </div>
 
-    <footer class="py-5 bg-dark">
-
+    <footer class="py-3 bg-dark text-light text-center">
+        <span class="align-middle"><i class="fa fa-code" aria-hidden="true"></i> Desarrollo web: Juan Dematei</span>
     </footer>
 
     <!-- Required scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="js/instafeed.min.js"></script>
-    <script type="text/javascript">
-        var feed = new Instafeed({
-            get: 'user',
-            userId: '2263540523',
-            clientId: 'df9aeb4b24b941fc9fc301f71b409e20'
-        });
-        feed.run();
-    </script> -->
-    <script>
-        feather.replace()
-    </script>
 
 </body>
 </html>
