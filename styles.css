@@ -49,6 +49,8 @@ section h2 {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-image: url("img/bg-header-static.jpg");
+  background-size: cover;
 }
 
 .fullscreen-video-wrap video {
