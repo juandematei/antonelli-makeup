@@ -64,7 +64,7 @@ section h2 {
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(116, 75, 89, 0.7);
+  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(90, 86, 100, 0.7));
 }
 
 .video-overlay-content {
@@ -78,7 +78,7 @@ section h2 {
   font-size: 6rem;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 540px) {
   .video-overlay-content h1 {
     font-size: 3rem;
   }
@@ -135,9 +135,10 @@ section h2 {
 }
 
 .jumbotron-custom {
-  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(116, 75, 89, 0.7)), url("img/bg-jumbotron.jpg");
+  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(90, 86, 100, 0.7)), url("img/bg-contact-2.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position-y: bottom;
   margin: 0;
 }
 
@@ -156,7 +157,10 @@ section h2 {
 }
 
 #contact {
-  background-color: #C4C2CE;
+  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(90, 86, 100, 0.7)), url("img/bg-contact-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: bottom;
 }
 
 .map-fluid {

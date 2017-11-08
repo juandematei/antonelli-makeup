@@ -37,7 +37,7 @@
         </div>
     </header>
 
-    <nav id="mainNav" class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+    <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="60" class="d-inline-block align-top" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,8 +110,12 @@
                     <h3>Yamila Antonelli</h3>
                     <p>Maquilladora profesional</p>
                     <div class="btn-group" role="group">
-                        <button class="btn btn-outline-light" type="button" href="mailto:antonellimakeup@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> antonellimakeup@gmail.com</button>
-                        <button class="btn btn-outline-light" type="button" href="tel: +54 11 3321-7234"><i class="fa fa-phone" aria-hidden="true"></i> 11 3321-7234</button>
+                            <a class="btn btn-outline-light" role="button" href="mailto:antonellimakeup@gmail.com" target="_blank">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar email
+                            </a>
+                            <a class="btn btn-outline-light" role="button" href="https://api.whatsapp.com/send?phone=5491133217234" target="_blank">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i> Chatear en Whatsapp
+                            </a>
                     </div>
                 </div>
             </div>
@@ -138,21 +142,10 @@
 
     <section id="contact" class="py-5">
         <div class="container">
-             <div class="row">
-                <div class="col-md-5 col-sm-12">
-                    <h2 class="text-center text-md-left">Contacto</h2>
-                    <p class="lead text-center text-md-left">Completá el formulario y enviá tu consulta.</p>
-                </div>
-                <div class="col-md-5 d-md-block d-none">
-                    <i class="fa fa-envelope" aria-hidden="true"></i> <a class="text-dark" href="mailto:antonellimakeup@gmail.com">antonellimakeup@gmail.com</a>
-                    <br>
-                    <i class="fa fa-phone" aria-hidden="true"></i><a class="text-dark" href="tel: +54 11 3321-7234">11 3321-7234</a>
-                </div>
-                <div class="col-md-5 d-md-block d-none">
-                    <a class="social-link" href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></i></a>
-                    <a class="social-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
-                </div>
-                <div class="col-md-7 col-sm-12">
+             <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="text-center text-light">Contacto</h2>
+                    <p class="lead text-center text-light">Completá el formulario y enviá tu consulta.</p>
                     <form>
                         <div class="form-group">
                             <!-- <label for="name">Nombre</label> -->
@@ -192,8 +185,10 @@
         <iframe src="https://snazzymaps.com/embed/26708" style="border:none;"></iframe>
     </div>
 
-    <footer class="py-3 bg-dark text-light text-center">
-        <span class="align-middle"><i class="fa fa-code" aria-hidden="true"></i> Desarrollo web: Juan Dematei</span>
+    <footer class="py-3 bg-dark text-light text-center text-md-right">
+        <div class="col-12">
+            <span class="align-middle">Hecho con <i class="fa fa-code" aria-hidden="true" style="color:orangered"></i> por Juan Dematei</span>
+        </div>
     </footer>
 
     <!-- Required scripts -->

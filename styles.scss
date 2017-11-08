@@ -6,6 +6,8 @@ $color-4: #C4C2CE;
 $color-5: #D19A58;
 $color-6: #A65853;
 
+$gradient: linear-gradient(45deg, rgba($color-1, 0.7), rgba($color-3, 0.7));
+
 //Buttons
 .btn {
     text-transform: uppercase;
@@ -78,7 +80,7 @@ section {
     top: 0;
     left: 0;
     z-index: 1;
-    background: rgba($color-2, 0.7);
+    background: $gradient;
 }
 
 .video-overlay-content {
@@ -91,7 +93,7 @@ section {
         font-size: 6rem;
     }
 
-    @media (min-width: 320px) {
+    @media (max-width: 540px) {
         h1 {
             font-size: 3rem;
         }
@@ -153,9 +155,10 @@ section {
 
 //Jumbotron
 .jumbotron-custom {
-    background: linear-gradient(45deg, rgba($color-1, 0.7), rgba($color-2, 0.7)), url('img/bg-jumbotron.jpg');
+    background: $gradient, url('img/bg-contact-2.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: bottom;
     margin: 0;
 
     button {
@@ -178,7 +181,10 @@ section {
 
 //Contact
 #contact {
-    background-color: $color-4;
+    background: $gradient, url('img/bg-contact-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: bottom;
 }
 
 .map-fluid {
