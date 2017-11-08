@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#343a40">
     <title>Antonelli makeup</title>
     <script src="https://use.fontawesome.com/71bc55938b.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Condensed:300,400,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -101,22 +102,34 @@
         </div> 
     </section>
 
-    <div class="jumbotron jumbotron-fluid jumbotron-custom text-light">
+    <div class="jumbotron jumbotron-fluid jumbotron-custom text-light py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 text-center">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-3 col-sm-12 text-center">
                     <img src="img/yamila.jpg" alt="" class="jumbo-profile">
                 </div>
-                <div class="col-md-8 col-sm-12 text-center text-md-left">
+                <div class="col-md-6 col-sm-12 text-center">
                     <h3>Yamila Antonelli</h3>
                     <p>Maquilladora profesional</p>
-                    <div class="btn-group" role="group">
+                    <div class="d-sm-none d-md-block">
+                        <div class="btn-group" role="group">
                             <a class="btn btn-outline-light" role="button" href="mailto:antonellimakeup@gmail.com" target="_blank">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar email
                             </a>
                             <a class="btn btn-outline-light" role="button" href="https://api.whatsapp.com/send?phone=5491133217234" target="_blank">
                                 <i class="fa fa-whatsapp" aria-hidden="true"></i> Chatear en Whatsapp
                             </a>
+                        </div>
+                    </div>
+                    <div class="d-sm-block d-md-none">
+                        <div class="btn-group-vertical" role="group">
+                            <a class="btn btn-outline-light" role="button" href="mailto:antonellimakeup@gmail.com" target="_blank">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar email
+                            </a>
+                            <a class="btn btn-outline-light" role="button" href="https://api.whatsapp.com/send?phone=5491133217234" target="_blank">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i> Chatear en Whatsapp
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,6 +192,21 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="social" class="py-3 bg-dark">
+        <div id="instafeed" class="d-flex justify-content-center"></div>
+
+        <script type="text/javascript">
+            var feed = new Instafeed({
+                get: 'user',
+                userId: '31000174',
+                accessToken: '31000174.1677ed0.df512d8920e44f41970f826039dd0cc9',
+                limit: '10',
+                template: '<a href="{{link}}"><img class="rounded mx-2" src="{{image}}" /></a>'
+            });
+            feed.run();
+        </script>
     </section>
 
     <div class="map-fluid">

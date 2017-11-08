@@ -137,7 +137,7 @@ section h2 {
 }
 
 .jumbotron-custom {
-  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(90, 86, 100, 0.7)), url("img/bg-contact-2.jpg");
+  background: linear-gradient(45deg, rgba(90, 86, 100, 0.7), rgba(166, 88, 83, 0.7)), url("img/bg-contact-2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position-y: bottom;
@@ -152,10 +152,24 @@ section h2 {
   color: #DB5F77;
 }
 
-.jumbo-profile {
+.jumbotron-custom .jumbo-profile {
   border-radius: 50%;
   border: 3px solid #FFF;
   max-height: 200px;
+}
+
+.jumbotron-custom h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.jumbotron-custom p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }
 
 #contact {

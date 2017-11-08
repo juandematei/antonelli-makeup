@@ -8,7 +8,8 @@ $color-6: #A65853;
 
 $dark-gray: #343a40;
 
-$gradient: linear-gradient(45deg, rgba($color-1, 0.7), rgba($color-3, 0.7));
+$gradient-1: linear-gradient(45deg, rgba($color-1, 0.7), rgba($color-3, 0.7));
+$gradient-2: linear-gradient(45deg, rgba($color-3, 0.7), rgba($color-6, 0.7));
 
 //Buttons
 .btn {
@@ -84,7 +85,7 @@ section {
     top: 0;
     left: 0;
     z-index: 1;
-    background: $gradient;
+    background: $gradient-1;
 }
 
 .video-overlay-content {
@@ -159,7 +160,7 @@ section {
 
 //Jumbotron
 .jumbotron-custom {
-    background: $gradient, url('img/bg-contact-2.jpg');
+    background: $gradient-2, url('img/bg-contact-2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position-y: bottom;
@@ -171,13 +172,29 @@ section {
         &:hover {
             color: $color-1;
         }
-    } 
-}
+    }
 
-.jumbo-profile {
-    border-radius: 50%;
-    border: 3px solid #FFF;
-    max-height: 200px;
+    .jumbo-profile {
+        border-radius: 50%;
+        border: 3px solid #FFF;
+        max-height: 200px;
+    }
+
+    h3 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 200;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        //color: $color-1;
+        //text-shadow: 2px 2px 8px $dark-gray;
+    }
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
 }
 
 //Courses
@@ -185,7 +202,7 @@ section {
 
 //Contact
 #contact {
-    background: $gradient, url('img/bg-contact-2.jpg');
+    background: $gradient-1, url('img/bg-contact-2.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position-y: bottom;
