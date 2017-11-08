@@ -179,6 +179,49 @@ section h2 {
   background-position-y: bottom;
 }
 
+#social #instafeed img {
+  box-shadow: 0 0 10px #222;
+}
+
+#social #instafeed img:hover {
+  transform: scale(1.2);
+  transition: 0.15s ease-in-out;
+}
+
+#social .social-links {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#social .social-links li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+#social .social-links li a {
+  color: #FFF;
+  background-color: #DB5F77;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+#social .social-links li a:hover {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #d23554;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.bg-primary {
+  background-color: #DB5F77 !important;
+}
+
 .map-fluid {
   overflow: hidden;
   padding-bottom: 300px;
@@ -192,23 +235,6 @@ section h2 {
   height: 300px;
   width: 100%;
   position: absolute;
-}
-
-.social-link {
-  display: inline-block;
-  background-color: #DB5F77;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #FFF;
-  margin-top: 20px;
-}
-
-a.social-link, a:hover.social-link {
-  color: #FFF;
-  text-decoration: none;
 }
  
 
