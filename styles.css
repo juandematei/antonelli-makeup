@@ -23,8 +23,11 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 section h2 {

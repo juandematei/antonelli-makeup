@@ -38,8 +38,11 @@ $gradient-2: linear-gradient(45deg, rgba($color-3, 0.7), rgba($color-6, 0.7));
 
 //Main
 body {
-    overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrapper {
+    overflow-x: hidden;
 }
 
 //Sections
