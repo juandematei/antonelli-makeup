@@ -1,5 +1,6 @@
 .btn {
   text-transform: uppercase;
+  border-radius: 100px;
 }
 
 .btn-primary {
@@ -24,6 +25,7 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
 }
 
 .wrapper {

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#343a40">
     <title>Antonelli makeup</title>
-    <script src="https://use.fontawesome.com/71bc55938b.js"></script>
+    <script src="https://use.fontawesome.com/2eb2043ed1.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Condensed:300,400,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 
 <body id="home" class="text-dark">
 
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
 
         <header class="v-header">
             <div class="fullscreen-video-wrap">
@@ -70,7 +70,7 @@
                             <a class="nav-link ml-3" href="#courses">Cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-primary ml-3" href="#contact" role="button">Contacto</a>
+                            <a class="btn btn-outline-primary ml-3" href="#contact">Contacto</a>
                         </li>    
                     </ul>
                 </div>
@@ -175,32 +175,39 @@
                         <p class="lead text-center text-light">Completá el formulario y enviá tu consulta.</p>
                         <form>
                             <div class="form-group">
-                                <!-- <label for="name">Nombre</label> -->
-                                <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <!-- <label for="email">Email</label> -->
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i></span>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <!-- <label for="phone">Teléfono</label> -->
-                                <input type="phone" class="form-control" id="phone" placeholder="Teléfono">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-phone fa-fw" aria-hidden="true"></i></span>
+                                    <input type="phone" class="form-control" id="phone" placeholder="Teléfono">
+                                </div>
                             </div>
                             <div class="form-group">
-                                <!-- <label for="reason">Motivo de la consulta</label> -->
-                                <select class="form-control" name="reason" id="reason">
-                                    <option value="" selected disabled>Motivo del mensaje</option>
-                                    <option value="">Maquillaje</option>
-                                    <option value="">Novia</option>
-                                    <option value="">Automaquillaje</option>
-                                    <option value="">Otro</option>
-                                </select>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-question fa-fw" aria-hidden="true"></i></span>
+                                    <select class="form-control" name="reason" id="reason">
+                                        <option value="" selected disabled>Motivo del mensaje</option>
+                                        <option value="">Maquillaje</option>
+                                        <option value="">Novia</option>
+                                        <option value="">Automaquillaje</option>
+                                        <option value="">Otro</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <!-- <label for="message">Mensaje</label> -->
                                 <textarea class="form-control" id="message" rows="3" placeholder="Mensaje"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar consulta</i></button>
                         </form>
                     </div>
                 </div>
@@ -209,7 +216,8 @@
 
         <section id="social" class="py-5 bg-dark">
             <h3 class="text-light text-center">Seguinos en <strong>Instagram</strong> y <strong>Facebook!</strong></h3>
-            <div id="instafeed" class="d-flex justify-content-center my-4"></div>
+
+            <div id="instafeed" class="d-flex justify-content-center my-4 wrapper"></div>
 
             <script type="text/javascript">
                 var feed = new Instafeed({
@@ -260,7 +268,7 @@
             </div>
         </footer>
 
-    </div>
+    <!-- </div> -->
 
     <!-- Required scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
