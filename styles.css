@@ -24,9 +24,18 @@
   border-color: #d23554;
 }
 
+.btn-link {
+  color: #DB5F77;
+}
+
+.btn-link:hover, .btn-link.hover, .btn-link:active, .btn-link.active, .btn-link:focus, .btn-link.focus {
+  color: #d23554;
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 .wrapper {
@@ -139,6 +148,10 @@ section h2 {
   color: #FFF;
 }
 
+#mainNav {
+  background: #343a40;
+}
+
 #mainNav li.nav-item {
   text-transform: uppercase;
 }
@@ -242,6 +255,13 @@ section h2 {
   height: 300px;
   width: 100%;
   position: absolute;
+}
+
+.anchor {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  margin-top: -86px;
 }
  
 

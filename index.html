@@ -77,7 +77,7 @@
                 <div class="col-md-8 col-sm-12">
                     <a class="col-md-3 col-sm-12 btn btn-outline-light" href="#mainNav" role="button">Ver más</a>
                     <span class="col-1"></span>
-                    <a class="col-md-3 col-sm-12 btn btn-primary" href="#contact" role="button">Contacto</a>
+                    <a class="col-md-3 col-sm-12 btn btn-primary" href="#contact-anchor" role="button">Contacto</a>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -88,7 +88,7 @@
         </div>
     </header>
 
-    <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+    <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="60" class="d-inline-block align-top" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,27 +96,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link ml-3" href="#home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-3" href="#services">Servicios</a>
+                        <a class="nav-link ml-3" href="#services-anchor">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ml-3" href="#testimonials">Testimonios</a>
+                        <a class="nav-link ml-3" href="#testimonials-anchor">Testimonios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-outline-primary ml-3" href="#contact">Contacto</a>
+                        <a class="nav-link ml-3" href="#contact-anchor">Contacto</a>
                     </li>    
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div id="services-anchor" class="anchor"></div>
     <section id="services" class="py-5">
         <div class="container">
-            <h2 class="text-center text-md-left">Servicios</h2>
-            <div class="row">
+            <h2 class="d-none text-center text-md-left">Servicios</h2>
+            
                 <div class="card-deck">
                     <!--Card 1-->
                     <div class="card text-center mb-4">
@@ -126,7 +127,7 @@
                             <p class="card-text">Maquillaje social, novias, 15 años...</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Más información</a>
+                            <a href="#contact-anchor" class="btn btn-link">Más información</a>
                         </div>
                     </div>
                     <!--Card 2-->
@@ -137,7 +138,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Más información</a>
+                            <a href="#contact-anchor" class="btn btn-link">Más información</a>
                         </div>
                     </div>
                     <!--Card 3-->
@@ -148,11 +149,11 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Más información</a>
+                            <a href="#contact-anchor" class="btn btn-link">Más información</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div> 
     </section>
 
@@ -164,16 +165,15 @@
                 </div>
                 <div class="col-md-6 col-sm-12 text-center">
                     <h3>Yamila Antonelli</h3>
-                    <p>Maquilladora profesional</p>
-                    <div class="d-none d-sm-none d-md-block">
-                        <div class="btn-group" role="group">
-                            <a class="btn btn-outline-light" role="button" href="mailto:info@antonellimakeup.com" target="_blank">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar email
-                            </a>
-                            <a class="btn btn-outline-light" role="button" href="https://api.whatsapp.com/send?phone=5491133217234" target="_blank">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i> Chatear en WhatsApp
-                            </a>
-                        </div>
+                    <h4>Maquilladora profesional</h4>
+                    <div class="d-none d-sm-none d-md-block mt-4">
+                        <a class="col-md-5 col-sm-12 btn btn-outline-light" role="button" href="mailto:info@antonellimakeup.com" target="_blank">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar email
+                        </a>
+                        <span class="col-1"></span>
+                        <a class="col-md-5 col-sm-12 btn btn-outline-light" role="button" href="https://api.whatsapp.com/send?phone=5491133217234" target="_blank">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i> Chatear en WhatsApp
+                        </a>
                     </div>
                     <div class="d-sm-block d-md-none">
                         <div>
@@ -190,6 +190,7 @@
         </div>
     </div>
 
+    <div id="testimonials-anchor" class="anchor"></div>
     <section id="testimonials" class="py-5">
         <div class="container">
             <h2 class="text-center text-md-left">Testimonios</h2>
@@ -201,6 +202,7 @@
         </div>
     </section>
 
+    <div id="contact-anchor" class="anchor"></div>
     <section id="contact" class="py-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -283,8 +285,8 @@
                 <div class="col-12 text-center py-3">
                     <span class="d-flex flex-column flex-md-row justify-content-md-around">
                         <p class="my-2"><i class="fa fa-lg fa-map-marker mr-2" aria-hidden="true"></i>Moldes 2906, Núñez, C.A.B.A.</p>
-                        <p class="my-2"><i class="fa fa-lg fa-envelope-o mr-2" aria-hidden="true"></i>antonellimakeup@gmail.com</p>
-                        <p class="my-2"><i class="fa fa-lg fa-phone mr-2" aria-hidden="true"></i>+54 11 1234-1234</p>
+                        <p class="my-2"><i class="fa fa-lg fa-envelope-o mr-2" aria-hidden="true"></i>info@antonellimakeup.com</p>
+                        <p class="my-2"><i class="fa fa-lg fa-phone mr-2" aria-hidden="true"></i>+54 11 3321-7234</p>
                     </span>
                 </div>
             </div>

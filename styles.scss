@@ -40,10 +40,19 @@ $gradient-2: linear-gradient(45deg, rgba($color-3, 0.7), rgba($color-6, 0.7));
     }
 }
 
+.btn-link {
+    color: $color-1;
+
+    &:hover, &.hover, &:active, &.active, &:focus, &.focus {
+        color: darken($color-1, 10%);
+    }
+}
+
 //Main
 body {
     font-family: 'Roboto Condensed', sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 .wrapper {
@@ -162,6 +171,8 @@ section {
 
 //Navigation
 #mainNav {
+    background: rgba($dark-gray, 1);
+
     li.nav-item {
         text-transform: uppercase;
     }
@@ -206,7 +217,7 @@ section {
     }
 }
 
-//Courses
+//Testimonials
 
 
 //Contact
@@ -277,4 +288,11 @@ section {
     height: 300px;
     width: 100%;
     position: absolute;
+}
+
+.anchor {
+    position: absolute;
+	z-index: -1;
+	left: 0;
+	margin-top: -86px;
 }
