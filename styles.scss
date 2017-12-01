@@ -1,3 +1,6 @@
+//Fonts:
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Roboto+Condensed:300,400,700');
+
 //Colors
 $color-1: #DB5F77;
 $color-2: #744B59;
@@ -268,7 +271,7 @@ section {
     height: 0;
 }
 
-.map-fluid iframe{
+.map-fluid iframe {
     left: 0;
     top: 0;
     height: 300px;
