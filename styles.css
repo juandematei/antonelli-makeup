@@ -32,6 +32,13 @@
   color: #d23554;
 }
 
+.btn-primary:not([disabled]):not(.disabled).active,
+.btn-primary:not([disabled]):not(.disabled).focus {
+  background-color: #d23554;
+  border-color: #d23554;
+  box-shadow: 0 0 0 0.2rem rgba(219, 95, 119, 0.5);
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden;

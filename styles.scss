@@ -48,6 +48,13 @@ $gradient-2: linear-gradient(45deg, rgba($color-3, 0.7), rgba($color-6, 0.7));
     }
 }
 
+.btn-primary:not([disabled]):not(.disabled).active, 
+.btn-primary:not([disabled]):not(.disabled).focus, {
+    background-color: darken($color-1, 10%);
+    border-color: darken($color-1, 10%);
+    box-shadow: 0 0 0 0.2rem rgba($color-1, .5);
+}
+
 //Main
 body {
     font-family: 'Roboto Condensed', sans-serif;
