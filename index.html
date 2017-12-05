@@ -50,11 +50,15 @@
 <body id="home" class="text-dark">
 
     <header class="v-header">
+
         <div class="fullscreen-video-wrap">
             <video class="d-none d-md-block" src="img/wedding.mp4" autoplay="yes" loop="yes"></video>
         </div>
+
         <div class="fullscreen-video-overlay"></div>
+
         <div class="container video-overlay-content text-center">
+
             <div class="row justify-content-center">
                 <div class="col-md-8 col-sm-12">
                     <h1>Bienvenidas!</h1>
@@ -73,24 +77,29 @@
                         Si quieren estar en manos de una profesional que las dejará hermosas, cuenten con el servicio de <strong>Antonelli Makeup</strong>.
                     </p>
                 </div>
-            </div>
+            </div><!--row-->
+
             <div class="row justify-content-center">
                 <div class="col-md-8 col-sm-12">
                     <a class="col-md-3 col-sm-12 btn btn-outline-light" href="#mainNav" role="button">Ver más</a>
                     <span class="col-1"></span>
                     <a class="col-md-3 col-sm-12 btn btn-primary" href="#contact-anchor" role="button">Contacto</a>
                 </div>
-            </div>
+            </div><!--row-->
+
             <div class="row justify-content-center">
-                <div class="chevrons">
+                <div class="chevrons"><!--FIXME: No se ven correctamente en mobile-->
                     <a href="#mainNav"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
                 </div>
-            </div>
-        </div>
+            </div><!--row-->
+
+        </div><!--container-->
+
     </header>
     <!-- HEADER -->
 
     <nav id="mainNav" class="navbar sticky-top navbar-expand-md navbar-dark">
+
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" height="60" class="d-inline-block align-top" alt="">
@@ -114,7 +123,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div><!--container-->
+
     </nav>
     <!-- NAV -->
 
@@ -122,6 +132,7 @@
         
         <div id="services-anchor" class="anchor"></div>
         <section id="services" class="py-5">
+
             <div class="container">
                 
                 <h2 class="d-none text-center text-md-left">Servicios</h2>
@@ -160,41 +171,44 @@
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cursosModal">Más info</button>
                         </div>
                     </div>
-                </div>
+                </div><!--card deck-->
     
-                <div class="modal fade" id="cursosModal" tabindex="-1" role="dialog" aria-labelledby="cursosModal" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="cursosModal">Cursos de automaquillaje</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <ul>
-                                    <li>Días y horarios a convenir.</li>
-                                    <li>Todos los materiales están incluidos, pero también pueden traer los suyos para aprender a usarlos.</li>
-                                    <li>Tono y fórmula de maquillaje más adecuado para cada piel.</li>
-                                    <li>Maquillar los ojos según su forma.</li>
-                                    <li>Colores que te favorecen.</li>
-                                    <li>Trucos.</li>
-                                </ul>
-                            </div>
-                            <!-- <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div> -->
+            </div><!--container-->
+
+            <div class="modal fade" id="cursosModal" tabindex="-1" role="dialog" aria-labelledby="cursosModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cursosModal">Cursos de automaquillaje</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Días y horarios a convenir.</li>
+                                <li>Todos los materiales están incluidos, pero también pueden traer los suyos para aprender a usarlos.</li>
+                                <li>Tono y fórmula de maquillaje más adecuado para cada piel.</li>
+                                <li>Maquillar los ojos según su forma.</li>
+                                <li>Colores que te favorecen.</li>
+                                <li>Trucos.</li>
+                            </ul>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
                     </div>
                 </div>
-    
-            </div>
+            </div><!--modal-->
+
         </section>
         <!-- SERVICES -->
     
         <section id="about" class="jumbotron jumbotron-fluid jumbotron-custom text-light py-5">
+
             <div class="container">
+
                 <div class="row d-flex align-items-center">
                     <div class="col-md-3 col-sm-12 text-center">
                         <img src="img/yamila.jpg" alt="" class="jumbo-profile">
@@ -223,17 +237,20 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div><!--row-->
+                
+            </div><!--container-->
+
         </section>
         <!-- ABOUT -->
     
         <div id="testimonials-anchor" class="anchor"></div>
         <section id="testimonials" class="py-5">
+
             <div class="container">
-    
+            
                 <h2 class="d-none text-center text-md-left">Testimonios</h2>
-    
+                
                 <div class="row justify-content-center">
                     <div class="col-8">
                         <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
@@ -273,18 +290,24 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div><!--row-->
+
+            </div><!--container-->
+
         </section>
         <!-- TESTIMONIALS -->
     
         <div id="contact-anchor" class="anchor"></div>
         <section id="contact" class="py-5">
+
             <div class="container">
+                
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-sm-12">
+
                         <h2 class="text-center text-light">Contacto</h2>
                         <p class="lead text-center text-light">Completá el formulario y enviá tu consulta.</p>
+
                         <form>
                             <div class="form-group">
                                 <div class="input-group">
@@ -331,18 +354,23 @@
                             </button>
                         </form>
                     </div>
-                </div>
-            </div>
+                </div><!--row-->
+
+            </div><!--container-->
+
         </section>
         <!-- CONTACT -->
+        
+    </main>
+    <!-- MAIN -->
     
+    <footer class="bg-dark text-light">
+
         <section id="social" class="py-5 bg-dark">
-            <h3 class="text-light text-center">Seguinos en
-                <strong>Instagram</strong> y
-                <strong>Facebook!</strong>
-            </h3>
+            <h3 class="text-light text-center">Seguinos en <strong>Instagram</strong> y <strong>Facebook!</strong></h3>
     
             <div id="instafeed" class="d-flex justify-content-center my-4 wrapper"></div>
+    
             <!-- TODO: Mover script a archivo externo -->
             <script type="text/javascript">
                 var feed = new Instafeed({
@@ -366,14 +394,9 @@
                 </ul>
             </div>
     
-        </section>
-        <!-- SOCIAL -->
-
-    </main>
-    <!-- MAIN -->
-
-    <footer class="bg-dark text-light">
-        <div class="bg-primary">
+        </section><!-- SOCIAL -->
+        
+        <section id="contact-footer" class="bg-primary">
             <div class="container">
                 <div class="col-12 text-center py-3">
                     <div class="d-flex flex-column flex-md-row justify-content-md-around">
@@ -382,19 +405,22 @@
                         <p class="my-2"><i class="fa fa-lg fa-phone mr-2" aria-hidden="true"></i>+54 11 3321-7234</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="map-fluid">
+            </div><!--container-->
+        </section><!-- CONTACT -->
+
+        <section id="map" class="map-fluid">
             <!-- Google Maps -->
             <iframe src="https://snazzymaps.com/embed/26708" style="border:none;"></iframe>
-        </div>
-        <div>
+        </section><!-- MAP -->
+
+        <section id="copyright">
             <div class="container">
                 <div class="col-12 text-center text-md-right py-3">
                     <span class="align-middle">Hecho con <i class="fa fa-code" aria-hidden="true" style="color:orangered"></i> por Juan Dematei</span>
                 </div>
             </div>
-        </div>
+        </section><!-- COPYRIGHT -->
+
     </footer>
     <!-- FOOTER -->
 
