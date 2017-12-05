@@ -88,12 +88,12 @@ section h2 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(90, 86, 100, 0.7));
 }
 
 .video-overlay-content {
-  z-index: 2;
+  z-index: 3;
 }
 
 .video-overlay-content h1 {
@@ -276,6 +276,13 @@ section h2 {
   z-index: -1;
   left: 0;
   margin-top: -86px;
+}
+
+#to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 0;
 }
  
 
