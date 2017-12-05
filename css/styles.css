@@ -68,7 +68,13 @@ section h2 {
   font-size: 6rem;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 992px) {
+  .video-overlay-content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
   .video-overlay-content h1 {
     font-size: 3rem;
   }
@@ -112,7 +118,7 @@ section h2 {
 }
 
 .chevrons {
-  bottom: -4rem;
+  bottom: -20px;
   position: relative;
 }
 
