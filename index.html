@@ -32,16 +32,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
-    <!-- TODO: Agregar meta facebook -->
-    <meta property="fb:app_id" content="123456789">
-    <meta property="og:url" content="http://example.com/page.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Content Title">
-    <meta property="og:image" content="http://example.com/image.jpg">
-    <meta property="og:description" content="Description Here">
-    <meta property="og:site_name" content="Site Name">
-    <meta property="og:locale" content="en_US">
-    <meta property="article:author" content="">
 
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -115,6 +105,9 @@
                         <a class="nav-link ml-3" href="#services-anchor">Servicios</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link ml-3" href="#about-anchor">Quién soy?</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link ml-3" href="#testimonials-anchor">Testimonios</a>
                     </li>
                     <li class="nav-item">
@@ -134,7 +127,7 @@
 
             <div class="container">
                 
-                <h2 class="d-none text-center text-md-left">Servicios</h2>
+                <h2 class="d-none">Servicios</h2>
     
                 <div class="card-deck">
                     <!--Card 1-->
@@ -194,9 +187,12 @@
         </section>
         <!-- SERVICES -->
     
+        <div id="about-anchor" class="anchor"></div>
         <section id="about" class="jumbotron jumbotron-fluid jumbotron-custom text-light py-5">
 
             <div class="container">
+
+                <h2 class="d-none">Quién soy?</h2>
 
                 <div class="row d-flex align-items-center">
                     <div class="col-sm-12 col-md-4 col-lg-3 text-center">
@@ -224,7 +220,7 @@
 
             <div class="container">
             
-                <h2 class="d-none text-center text-md-left">Testimonios</h2>
+                <h2 class="d-none">Testimonios</h2>
                 
                 <div class="row justify-content-center">
                     <div class="col-8">
@@ -382,8 +378,8 @@
 
         <section id="copyright">
             <div class="container">
-                <div class="col-12 text-center py-3">
-                    <span class="align-middle">Hecho con <i class="fa fa-code" aria-hidden="true" style="color:orangered"></i> por Juan Dematei</span>
+                <div class="col-12 text-center text-md-left py-3">
+                    <span class="align-middle">Hecho con <i class="fa fa-code text-danger" aria-hidden="true"></i> por <a href="http://www.juandematei.com" target="_blank" class="text-white">Juan Dematei</a></span>
                 </div>
             </div>
         </section><!-- COPYRIGHT -->
