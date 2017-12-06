@@ -135,7 +135,7 @@ section h2 {
 }
 
 .jumbotron-custom {
-  background: linear-gradient(45deg, rgba(90, 86, 100, 0.7), rgba(166, 88, 83, 0.7)), url("../img/bg-contact-2.jpg");
+  background: linear-gradient(45deg, rgba(90, 86, 100, 0.7), rgba(166, 88, 83, 0.7)), url("../img/bg-jumbotron.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position-y: bottom;
@@ -178,7 +178,7 @@ section h2 {
 }
 
 #contact {
-  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(90, 86, 100, 0.7)), url("/img/bg-contact-2.jpg");
+  background: linear-gradient(45deg, rgba(219, 95, 119, 0.7), rgba(90, 86, 100, 0.7)), url("/img/bg-jumbotron.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position-y: bottom;
