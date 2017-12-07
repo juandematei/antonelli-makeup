@@ -1,5 +1,7 @@
 (function() {
 
+    $('body').scrollspy({ target: '#mainNav', offset: 86 })
+
     $(document).scroll(function() {
         var y = $('html').scrollTop();
         if (y > 500) {
