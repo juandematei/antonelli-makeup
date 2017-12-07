@@ -170,6 +170,10 @@ section h2 {
   letter-spacing: 0.1rem;
 }
 
+.carousel-item > div {
+  min-height: 14rem;
+}
+
 .customer {
   width: 100px;
   height: 100px;
