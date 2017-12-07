@@ -2,32 +2,32 @@
 
 // configure
 $from = 'info@antonellimakeup.com';
-$sendTo = 'juandematei@gmail.com';
+$sendTo = 'info@antonellimakeup.com';
 $subject = 'Nuevo mensaje desde formulario de contacto web';
-$fields = array('name' => 'Nombre', 'email' => 'Email', 'phone' => 'Telefono', 'reason' => 'Asunto', 'message' => 'Mensaje'); // array variable name => Text to appear in the email
-$okMessage = 'Su mensaje se ha enviado correctamente.';
-$errorMessage = 'Hubo un error, por favor intente nuevamente';
+$fields = array('name' => 'Nombre', 'email' => 'Email', 'phone' => 'Teléfono', 'reason' => 'Asunto', 'message' => 'Mensaje'); // array variable name => Text to appear in the email
+$okMessage = 'Tu mensaje se ha enviado correctamente.';
+$errorMessage = 'Hubo un error, por favor intentá nuevamente';
 
 // let's do the sending
 
 try
 {
-    $emailText = "Has recibido un nuevo mensaje desde el formulario de contacto de la web.\n";
+    $emailText = "Has recibido un nuevo mensaje desde el formulario de contacto de la web.\r\n";
 
     foreach ($_POST as $key => $value) {
 
         if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value \n";
+            $emailText .= "$fields[$key]: $value \r\n";
         }
     }
 
     $headers = array('Content-Type: text/html; charset="UTF-8";',
-        'From: ' . $from,
-        'Reply-To: ' . $from,
-        'Return-Path: ' . $from,
+        'From: ' . $_POST['email'],
+        'Reply-To: ' . $_POST['email'],
+        'Return-Path: ' . $_POST['email'],
     );
 
-    mail($sendTo, $subject, $emailText, implode("\n", $headers));
+    mail($sendTo, $subject, $emailText, implode("\r\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
