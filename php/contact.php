@@ -1,8 +1,8 @@
 <?php
 
 // configure
-$from = 'info@antonellimakeup.com';
-$sendTo = 'info@antonellimakeup.com';
+$from = 'antonellimakeup@gmail.com';
+$sendTo = 'antonellimakeup@gmail.com';
 $subject = 'Nuevo mensaje desde formulario de contacto web';
 $fields = array('name' => 'Nombre', 'email' => 'Email', 'phone' => 'Teléfono', 'reason' => 'Asunto', 'message' => 'Mensaje'); // array variable name => Text to appear in the email
 $okMessage = 'Tu mensaje se ha enviado correctamente.';
